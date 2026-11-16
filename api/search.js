@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
   const api = new URL("https://www.googleapis.com/youtube/v3/search");
   api.searchParams.set("part", "snippet");
   api.searchParams.set("type", "video");
-  api.searchParams.set("maxResults", "12");
+  api.searchParams.set("maxResults", "25
   api.searchParams.set("safeSearch", "strict");
   api.searchParams.set("videoEmbeddable", "true");
   api.searchParams.set("q", q);
